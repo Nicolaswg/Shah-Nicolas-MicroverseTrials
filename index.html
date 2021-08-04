@@ -8,29 +8,44 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
     <header id = "header">
-      <img id ="header-img" src="src/logo.png">
-  
+      <div class='img-container'>
+     <img id ="header-img" src="src/logo.png">
+    </div>
     <nav id ="nav-bar">
         <ul>
-            <li> <a href="#">Menu</a> </li>
-            <li> <a href="#">about</a></li>
-            <li> <a href="#">Help</a></li>
+            <li> <a href="#form-section" class= 'nav-link'>Form</a> </li>
+            <li> <a href="#video-section" class= 'nav-link'>about</a></li>
+            <li> <a href="#card-section" class= 'nav-link'>Help</a></li>
         </ul>  
   </nav>
   </header>
-  <body>
-      <div id="video">
-          <video href="https://youtu.be/y8Yv4pnO7qc"></video>
-      </div>
-      <div id ="form">
-          <label for="email"> please enter your email here (required)</label>
-          <input id="email" name="useremail" required placeholder="enetr your emial here">
-          <a href= "https://www.freecodecamp.com/email-submit)."> Submit</a>
+  <main>
+    <section id='form-section'>
+      <form id='form' action="https://www.freecodecamp.com/email-submit">
+        <label for="email"> please enter your email here</label>
+        <input type ='email'id="email"  placeholder="enter your email here" required>
+        <input type="submit" id='submit' value='GET STARTED'>
+      </form>
+      
+    </section>
+
+  <section id="video-section">
+    <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen="" height="315" frameborder="0"></iframe>
+  </section>
+
+  <section id='card-section'>
+
+  </section>
+  </main>
+
+    
   
-      </div>
-  
+     
+      
+
+
+
     <script  src="js/index.js"></script>
   </body>
 </html>
